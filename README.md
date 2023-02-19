@@ -1,0 +1,3 @@
+This is my first attempt at a rust program. I started learning rust 2/20/23, and got to chapter 5 of the official book (https://rust-book.cs.brown.edu/). Am loving this language! That is to say, lots of things to improve and learn on.
+
+There is a website called Nerdle (https://nerdlegame.com) which requires for to figure out a formula using guessing. This tool will have you put in the first two guesses, and depending on what you get back as answers, will give you all possible answers to the puzzle. Enjoy, and please feel free to leave feedback. Again, this was/is a learning project.
