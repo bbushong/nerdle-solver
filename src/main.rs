@@ -569,7 +569,7 @@ fn main() {
         }
         // x-xx-x
         for (p1i, g1) in one_digit_number(possibles[0], character_set).chars().enumerate() {
-            for (p2i, g2) in two_digit_number(possibles[2], possibles[3], character_set).chars().enumerate() {
+            for (p2i, g2) in two_digit_number(possibles[2], possibles[3], character_set).split('|').enumerate() {
                 for (p3i, g3) in one_digit_number(possibles[5],character_set).chars().enumerate() {
                     for o1 in operand(possibles[1], character_set).chars() {
                         for o2 in operand(possibles[4], character_set).chars() {
@@ -612,7 +612,7 @@ fn main() {
         }
         // xx-xx
         for (p1i, g1) in two_digit_number(possibles[0], possibles[1], character_set).split('|').enumerate() {
-            for (p1i, g2) in two_digit_number(possibles[3], possibles[4], character_set).chars().enumerate() {
+            for (p1i, g2) in two_digit_number(possibles[3], possibles[4], character_set).split('|').enumerate() {
                 for o1 in operand(possibles[2], character_set).chars() {
                     two_group_answer_check(g1.to_string(), o1, g2.to_string(), possibles, character_set);
                 }
