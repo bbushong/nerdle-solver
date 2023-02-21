@@ -597,7 +597,7 @@ fn main() {
         }
     }
     //if "=" is in the 6th spot (2 number answer / 5 unknowns)
-    if equal_sign == 7 {
+    if equal_sign == 6 {
         // x-x-x
         for (p1i, g1) in one_digit_number(possibles[0], character_set).chars().enumerate() {
             for (p2i, g2) in one_digit_number(possibles[2], character_set).chars().enumerate() {
